@@ -7,6 +7,9 @@ sudo mv -f irstar.conf /etc/supervisord/conf.d/
 sudo systemctl enable supervisor
 sudo systemctl start supervisor
 sudo supervisorctl start flask
+# homebridge need these packages
+sudo apt-get install libavahi-compat-libdnssd-dev
 sudo npm install -g --unsafe-perm homebridge homebridge-http
 mkdir ~/.homebridge
 cp homebridge.config.json ~/.homebridge/config.json
+sudo cp homebridge.service /etc/systemd/system/
