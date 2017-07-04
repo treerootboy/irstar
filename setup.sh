@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt-get install python-dev supervisor node -y
+sudo bash setup_nodejs_8.sh
+sudo apt-get install python-dev supervisor nodejs -y
 sudo pip install flask broadlink --upgrade
 sed "s|<dir>|`pwd`|" supervisord.conf > irstar.conf
 sudo mv -f irstar.conf /etc/supervisord/conf.d/

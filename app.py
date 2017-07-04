@@ -69,7 +69,6 @@ def command(dev, cmd):
           with open("%s/%s.st" % (IR_LIB, dev), 'w') as f:
             f.write('ON')
         
-        
         return jsonify({ 'status': 'ok', 'message': '%s %sed' % (dev, cmd)})
       
       return jsonify({ 'status': 'error', 'message': 'ir_packet is empty' })
