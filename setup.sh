@@ -8,4 +8,5 @@ sudo systemctl enable supervisor
 sudo systemctl start supervisor
 sudo supervisorctl start flask
 sudo npm install -g homebridge homebridge-http
-sudo cp homebridge.config.json ~/.homebridge/config.json
+mkdir ~/.homebridge
+cp homebridge.config.json ~/.homebridge/config.json
