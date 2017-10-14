@@ -1,4 +1,4 @@
-IR_LIB = "/tmp/ir"
+IR_LIB = "/home/pi/app/irstar/ir"
 
 from flask import Flask, jsonify
 import broadlink

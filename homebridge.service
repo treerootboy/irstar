@@ -5,7 +5,7 @@ After=syslog.target network-online.target
 [Service]
 Type=simple
 User=pi
-ExecStart=/usr/local/bin/homebridge -U /var/lib/homebridge
+ExecStart=/usr/bin/homebridge 
 Restart=on-failure
 RestartSec=10
 KillMode=process
