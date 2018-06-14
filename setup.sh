@@ -9,7 +9,7 @@ sudo systemctl start supervisor
 sudo supervisorctl start flask
 # homebridge need these packages
 sudo apt-get install libavahi-compat-libdnssd-dev
-sudo npm install -g --unsafe-perm homebridge homebridge-http
+sudo npm install -g --unsafe-perm homebridge homebridge-http homebridge-http-temperature
 mkdir ~/.homebridge
 cp homebridge.config.json ~/.homebridge/config.json
 sudo cp homebridge.service /etc/systemd/system/
